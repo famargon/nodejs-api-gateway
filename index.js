@@ -1,9 +1,10 @@
 const express = require('express')  
 const httpProxy = require('express-http-proxy')  
+var gatewayConfig;
 if(process.env.DEV){
-  const gatewayConfig = require('./api-gateway-config.json');
+   gatewayConfig = require('./api-gateway-config.json');
 }else{
-  const gatewayConfig = require('./api-gateway-config-heroku.json');
+  gatewayConfig = require('./api-gateway-config-heroku.json');
 }
 
 const app = express()

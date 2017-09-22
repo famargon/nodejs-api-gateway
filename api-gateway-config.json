@@ -1,0 +1,14 @@
+{
+    "services":[
+        {
+            "name":"users",
+            "url":"http://localhost:8888",
+            "mapping":"/users*"
+        },
+        {
+            "name":"fruits",
+            "url":"http://localhost:9999",
+            "mapping":"/fruits*"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "services":[
+        {
+            "name":"users",
+            "url":"http://web.nodejs-users-service.app.localspace",
+            "mapping":"/users*"
+        }
+    ]
+}

@@ -2,7 +2,7 @@
     "services":[
         {
             "name":"users",
-            "url":"http://web.nodejs-users-service.app.localspace",
+            "url":"https://nodejs-users-service.herokuapp.com",
             "mapping":"/users*"
         }
     ]

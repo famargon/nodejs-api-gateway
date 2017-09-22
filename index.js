@@ -6,13 +6,14 @@ if(process.env.DEV){
 }else{
   gatewayConfig = require('./api-gateway-config-heroku.json');
 }
-
+const API_KEY = process.env.API_KEY || "dev";
 const app = express()
 
 gatewayConfig.services.forEach(function(service) {
   console.log("mapping service "+service.name);
   const proxy = httpProxy(service.url);
   app.all(service.mapping,(req,res,next)=>{
+    req.headers['api-key'] = API_KEY;
     proxy(req,res,next);
   })
 });

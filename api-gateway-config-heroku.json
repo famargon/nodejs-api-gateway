@@ -4,6 +4,11 @@
             "name":"users",
             "url":"https://nodejs-users-service.herokuapp.com",
             "mapping":"/users*"
+        },
+        {
+            "name":"fruits",
+            "url":"https://nodejs-fruits-service.herokuapp.com",
+            "mapping":"/fruits*"
         }
     ]
 }

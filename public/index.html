@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Holi</title>
+  </head>
+  <body ng-app="app" ng-controller="ctrl as ct" ng-cloak>
+  	
+  	<button ng-click="ct.loadFruits()">load fruits</button>
+    <div ng-repeat="fruit in ct.fruits">
+      <div>{{fruit.name}} is {{fruit.color}}</div>
+    </div>
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	  <script src="app.js"></script>
+	  <script src="controller.js"></script>
+  </body>
+</html>
